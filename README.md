@@ -11,9 +11,9 @@
 该框架实现了类似于<font color=#0000FF >探探左滑右滑</font> 、<font color=#0000FF >陌陌的点点匹配</font>功能。 功能齐全，可以完成商业级的项目。
 
 ### 描述
-1、该框架采用<font color=#0000FF >UITableView</font> 的设计思想，内部使用四张卡片实现卡片的复用效果。通过更新卡片的代理回调来显示对于位置的数据。具体可参考demo示例。
-2、建议使用者新建一个Cell继承<font color=#0000FF >YCCardCell</font>使用，<font color=#0000FF >YCCardCell</font> 只是一个基类，监听了卡片滑动的距离等操作，方便自定义cell处理相关业务：比如向左滑动显示不喜欢图标，向右滑动显示喜欢图标等。
-3、统一术语
+- 1、该框架采用<font color=#0000FF >UITableView</font> 的设计思想，内部使用四张卡片实现卡片的复用效果。通过更新卡片的代理回调来显示对于位置的数据。具体可参考demo示例。
+- 2、建议使用者新建一个Cell继承<font color=#0000FF >YCCardCell</font>使用，<font color=#0000FF >YCCardCell</font> 只是一个基类，监听了卡片滑动的距离等操作，方便自定义cell处理相关业务：比如向左滑动显示不喜欢图标，向右滑动显示喜欢图标等。
+- 3、统一术语
     向左滑动也叫：不喜欢
     向右滑动也叫：喜欢
     回退也叫： 撤销 
