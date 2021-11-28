@@ -103,7 +103,7 @@
  * @param isRightDirection 是否为右边
  */
 - (BOOL)yc_cardDragView:(YCCardView *)cardView cheackCardHasCanDragWithDragingDirection:(BOOL )isRightDirection {
-    return NO;
+    return YES;
 }
 
 
