@@ -1,0 +1,782 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08CFAFC6DC913A1120DEB5EFD28091EC /* YCCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 934E6C1DBF5F1DA3D0B42471F645D272 /* YCCardView.m */; };
+		18733BDB16E7A2A0B094025ABCCEEE32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		1E7C321B66F36FA187B940AB762CDA28 /* YCCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BDA0C2D9C4F0A65104047F7C178D3CF6 /* YCCardCell.m */; };
+		280EAC87ACF5AEF1E9000E4BF59800BA /* YCCardView.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E727A0496D498374D66C5AFCD792B3 /* YCCardView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7628B1B0A755503D17256376D10FB616 /* Pods-YCCardView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 431D657AB1AF5DF9476288FB7667ED68 /* Pods-YCCardView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A080891A0C16B210AB875C3B30347A2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A450535942498D55F5EE3E72C4187F82 /* Pods-YCCardView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B0B5D56172DEC2E6791504F2870783 /* Pods-YCCardView_Tests-dummy.m */; };
+		B347FF06E86A1DB9E0B2232869E41A35 /* YCCardView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5545F90AC95CEF0CDF74E3543030513 /* YCCardView-dummy.m */; };
+		C486B2CC25BB014060C657A0A0467B61 /* Pods-YCCardView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 66B89821642410162973C0F1CCD214D3 /* Pods-YCCardView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0D184DDB3A060F18701761513D30F7C /* YCCardView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FF52240542B3028ED1A151C9D424B4C1 /* YCCardView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D22FFBA698AAD8B3DDD20B08C7A093E6 /* YCCardCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 53B7B16C290343D6D532EDC08182474C /* YCCardCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9AA8C506F67DA17927C432D39D32B28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		FE1F1568773BACC7D4C34BC51AE9E8AB /* Pods-YCCardView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B08C5355E687C23DC0DEDFA918597020 /* Pods-YCCardView_Example-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0BDF231E1A24B5FBFD3B0D2DD5E5F132 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC19DD13B6C4888DE1A4EE995A00091B;
+			remoteInfo = YCCardView;
+		};
+		6A9A76F447E2F0BBEACCF31AE4F3C711 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5E2E9025FE8906B3933F0B4B3EFBE93;
+			remoteInfo = "Pods-YCCardView_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0AAD7E574463FBA36AA309E0C70EEFF9 /* Pods-YCCardView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YCCardView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		0B385D1A57BD24B39D86DDCABB121366 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		0F379B3456B842FB3D9266F7D0932679 /* YCCardView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YCCardView.release.xcconfig; sourceTree = "<group>"; };
+		13EF4B967E17A1194EE95EC24C9ABAC0 /* YCCardView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YCCardView.debug.xcconfig; sourceTree = "<group>"; };
+		1A986DA1B79884CD6BFEBD5570C8B14B /* Pods-YCCardView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YCCardView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		303FE249B6E7F5AA4CF57A45AF145D9C /* Pods-YCCardView_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-YCCardView_Tests"; path = Pods_YCCardView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37E3B3F25B92092B675B245FBF75F98D /* YCCardView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YCCardView.modulemap; sourceTree = "<group>"; };
+		431D657AB1AF5DF9476288FB7667ED68 /* Pods-YCCardView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YCCardView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		4348DEC6DD33C3E370DBFE18A06F0EE3 /* Pods-YCCardView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YCCardView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		509BA40B57ECA9440CA2195F950B0C88 /* Pods-YCCardView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YCCardView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		52114F7A712A0AF423CD27BB9A7515DC /* Pods-YCCardView_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-YCCardView_Example"; path = Pods_YCCardView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53B7B16C290343D6D532EDC08182474C /* YCCardCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YCCardCell.h; path = YCCardView/Classes/YCCardCell.h; sourceTree = "<group>"; };
+		54E727A0496D498374D66C5AFCD792B3 /* YCCardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YCCardView.h; path = YCCardView/Classes/YCCardView.h; sourceTree = "<group>"; };
+		5C71E2E3DA635EC3259F1C10F7713EEC /* Pods-YCCardView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YCCardView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		635298B550438E24E61C32688E19526E /* Pods-YCCardView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YCCardView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		651D0DDB0212358A97B5A54F179594E0 /* YCCardView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YCCardView-prefix.pch"; sourceTree = "<group>"; };
+		66B89821642410162973C0F1CCD214D3 /* Pods-YCCardView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YCCardView_Example-umbrella.h"; sourceTree = "<group>"; };
+		68C2100B89105C8C303DC0B6D2BE98D0 /* Pods-YCCardView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YCCardView_Tests.modulemap"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		76B3B1C81FB5EABBEBF2D8158A2851BB /* Pods-YCCardView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YCCardView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		8A01B3E4F1B22104049354C8A67C1FA7 /* Pods-YCCardView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YCCardView_Tests-Info.plist"; sourceTree = "<group>"; };
+		934E6C1DBF5F1DA3D0B42471F645D272 /* YCCardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YCCardView.m; path = YCCardView/Classes/YCCardView.m; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A17C3490E8C001717B48D789E7ED306B /* YCCardView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YCCardView-Info.plist"; sourceTree = "<group>"; };
+		B020C26A0B31823BA6CED34023180007 /* YCCardView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YCCardView; path = YCCardView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B08C5355E687C23DC0DEDFA918597020 /* Pods-YCCardView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YCCardView_Example-dummy.m"; sourceTree = "<group>"; };
+		BB6658371C5E7507128C4E7BCCD6D68A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		BDA0C2D9C4F0A65104047F7C178D3CF6 /* YCCardCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YCCardCell.m; path = YCCardView/Classes/YCCardCell.m; sourceTree = "<group>"; };
+		C069D3D9914FA02D99ACAC7A2F168E87 /* Pods-YCCardView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YCCardView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C0B0B5D56172DEC2E6791504F2870783 /* Pods-YCCardView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YCCardView_Tests-dummy.m"; sourceTree = "<group>"; };
+		C42E1F76553BB5A9C3C16D1660CBDFDB /* YCCardView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = YCCardView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CBEDB19C679E87968D8DDA182F2B1353 /* Pods-YCCardView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YCCardView_Example-Info.plist"; sourceTree = "<group>"; };
+		ED35E43465EBF23270B159EE5C542452 /* Pods-YCCardView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YCCardView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F5545F90AC95CEF0CDF74E3543030513 /* YCCardView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YCCardView-dummy.m"; sourceTree = "<group>"; };
+		FE142161A75079B77ECE5EDE8A005193 /* Pods-YCCardView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YCCardView_Example.modulemap"; sourceTree = "<group>"; };
+		FF52240542B3028ED1A151C9D424B4C1 /* YCCardView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YCCardView-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		608B5CD7EC10E94F16AD464228F139EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9AA8C506F67DA17927C432D39D32B28 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65330BD5362EB65BA48236AEB362AEA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18733BDB16E7A2A0B094025ABCCEEE32 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FCC559E1732EEF06DBC14779BF7CD82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A080891A0C16B210AB875C3B30347A2B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EC8BD6D53085536A13276C7CC430D51 /* YCCardView */ = {
+			isa = PBXGroup;
+			children = (
+				53B7B16C290343D6D532EDC08182474C /* YCCardCell.h */,
+				BDA0C2D9C4F0A65104047F7C178D3CF6 /* YCCardCell.m */,
+				54E727A0496D498374D66C5AFCD792B3 /* YCCardView.h */,
+				934E6C1DBF5F1DA3D0B42471F645D272 /* YCCardView.m */,
+				E35314CB378B9C60D4104554BFD105B2 /* Pod */,
+				6AE96C23669FEF90CE20D1417811C621 /* Support Files */,
+			);
+			name = YCCardView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		10E5C4861A95941F61C09C63DAAE5100 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ACD715C7CF52D6319F8E375FA3CCC48A /* Pods-YCCardView_Example */,
+				8C8D31C07F83BFAA83FAE7B85447C845 /* Pods-YCCardView_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6AE96C23669FEF90CE20D1417811C621 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				37E3B3F25B92092B675B245FBF75F98D /* YCCardView.modulemap */,
+				F5545F90AC95CEF0CDF74E3543030513 /* YCCardView-dummy.m */,
+				A17C3490E8C001717B48D789E7ED306B /* YCCardView-Info.plist */,
+				651D0DDB0212358A97B5A54F179594E0 /* YCCardView-prefix.pch */,
+				FF52240542B3028ED1A151C9D424B4C1 /* YCCardView-umbrella.h */,
+				13EF4B967E17A1194EE95EC24C9ABAC0 /* YCCardView.debug.xcconfig */,
+				0F379B3456B842FB3D9266F7D0932679 /* YCCardView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/YCCardView";
+			sourceTree = "<group>";
+		};
+		8C8D31C07F83BFAA83FAE7B85447C845 /* Pods-YCCardView_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				68C2100B89105C8C303DC0B6D2BE98D0 /* Pods-YCCardView_Tests.modulemap */,
+				4348DEC6DD33C3E370DBFE18A06F0EE3 /* Pods-YCCardView_Tests-acknowledgements.markdown */,
+				C069D3D9914FA02D99ACAC7A2F168E87 /* Pods-YCCardView_Tests-acknowledgements.plist */,
+				C0B0B5D56172DEC2E6791504F2870783 /* Pods-YCCardView_Tests-dummy.m */,
+				8A01B3E4F1B22104049354C8A67C1FA7 /* Pods-YCCardView_Tests-Info.plist */,
+				431D657AB1AF5DF9476288FB7667ED68 /* Pods-YCCardView_Tests-umbrella.h */,
+				ED35E43465EBF23270B159EE5C542452 /* Pods-YCCardView_Tests.debug.xcconfig */,
+				0AAD7E574463FBA36AA309E0C70EEFF9 /* Pods-YCCardView_Tests.release.xcconfig */,
+			);
+			name = "Pods-YCCardView_Tests";
+			path = "Target Support Files/Pods-YCCardView_Tests";
+			sourceTree = "<group>";
+		};
+		976D2F93E051F1CEFAC143D36C7367F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52114F7A712A0AF423CD27BB9A7515DC /* Pods-YCCardView_Example */,
+				303FE249B6E7F5AA4CF57A45AF145D9C /* Pods-YCCardView_Tests */,
+				B020C26A0B31823BA6CED34023180007 /* YCCardView */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACD715C7CF52D6319F8E375FA3CCC48A /* Pods-YCCardView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				FE142161A75079B77ECE5EDE8A005193 /* Pods-YCCardView_Example.modulemap */,
+				635298B550438E24E61C32688E19526E /* Pods-YCCardView_Example-acknowledgements.markdown */,
+				5C71E2E3DA635EC3259F1C10F7713EEC /* Pods-YCCardView_Example-acknowledgements.plist */,
+				B08C5355E687C23DC0DEDFA918597020 /* Pods-YCCardView_Example-dummy.m */,
+				509BA40B57ECA9440CA2195F950B0C88 /* Pods-YCCardView_Example-frameworks.sh */,
+				CBEDB19C679E87968D8DDA182F2B1353 /* Pods-YCCardView_Example-Info.plist */,
+				66B89821642410162973C0F1CCD214D3 /* Pods-YCCardView_Example-umbrella.h */,
+				1A986DA1B79884CD6BFEBD5570C8B14B /* Pods-YCCardView_Example.debug.xcconfig */,
+				76B3B1C81FB5EABBEBF2D8158A2851BB /* Pods-YCCardView_Example.release.xcconfig */,
+			);
+			name = "Pods-YCCardView_Example";
+			path = "Target Support Files/Pods-YCCardView_Example";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				DC0DFC5D593C9A8A169A33AADAD57EDA /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				976D2F93E051F1CEFAC143D36C7367F7 /* Products */,
+				10E5C4861A95941F61C09C63DAAE5100 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC0DFC5D593C9A8A169A33AADAD57EDA /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0EC8BD6D53085536A13276C7CC430D51 /* YCCardView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		E35314CB378B9C60D4104554BFD105B2 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				BB6658371C5E7507128C4E7BCCD6D68A /* LICENSE */,
+				0B385D1A57BD24B39D86DDCABB121366 /* README.md */,
+				C42E1F76553BB5A9C3C16D1660CBDFDB /* YCCardView.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		45A221B8B4D07331C2CEB64B0DA1E624 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D22FFBA698AAD8B3DDD20B08C7A093E6 /* YCCardCell.h in Headers */,
+				280EAC87ACF5AEF1E9000E4BF59800BA /* YCCardView.h in Headers */,
+				D0D184DDB3A060F18701761513D30F7C /* YCCardView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		996681C21611B82302C272222B426945 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C486B2CC25BB014060C657A0A0467B61 /* Pods-YCCardView_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A50D5FFC1DB624808DBDBB764BE6A1B5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7628B1B0A755503D17256376D10FB616 /* Pods-YCCardView_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		667E46A1C8458160BDC34557F4974690 /* Pods-YCCardView_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BD3D11DB86ADE9DC2B1729BD5C35E8A /* Build configuration list for PBXNativeTarget "Pods-YCCardView_Tests" */;
+			buildPhases = (
+				A50D5FFC1DB624808DBDBB764BE6A1B5 /* Headers */,
+				004D23665FC930677925CE530F6368CF /* Sources */,
+				9FCC559E1732EEF06DBC14779BF7CD82 /* Frameworks */,
+				90D790938CF49375A43A76CBF9275633 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D700D58973C7DF899A476370C74F01A /* PBXTargetDependency */,
+			);
+			name = "Pods-YCCardView_Tests";
+			productName = Pods_YCCardView_Tests;
+			productReference = 303FE249B6E7F5AA4CF57A45AF145D9C /* Pods-YCCardView_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+		C5E2E9025FE8906B3933F0B4B3EFBE93 /* Pods-YCCardView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B5C666FF278702F8996C7DF26A02A7 /* Build configuration list for PBXNativeTarget "Pods-YCCardView_Example" */;
+			buildPhases = (
+				996681C21611B82302C272222B426945 /* Headers */,
+				EF66A9775DEB8FB8B392AE57A539F858 /* Sources */,
+				65330BD5362EB65BA48236AEB362AEA3 /* Frameworks */,
+				18F6583FBE163B2BFE8904AA9EB3F2FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14B5B871E1CCB01DFBD4867F3D2E4A80 /* PBXTargetDependency */,
+			);
+			name = "Pods-YCCardView_Example";
+			productName = Pods_YCCardView_Example;
+			productReference = 52114F7A712A0AF423CD27BB9A7515DC /* Pods-YCCardView_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+		DC19DD13B6C4888DE1A4EE995A00091B /* YCCardView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86CF7B7AD1E23C6570178023111E2CEC /* Build configuration list for PBXNativeTarget "YCCardView" */;
+			buildPhases = (
+				45A221B8B4D07331C2CEB64B0DA1E624 /* Headers */,
+				AFF61EF342B3312BE911C2EEDA721847 /* Sources */,
+				608B5CD7EC10E94F16AD464228F139EB /* Frameworks */,
+				B8E90888457E263808B50852549E5E37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YCCardView;
+			productName = YCCardView;
+			productReference = B020C26A0B31823BA6CED34023180007 /* YCCardView */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 976D2F93E051F1CEFAC143D36C7367F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5E2E9025FE8906B3933F0B4B3EFBE93 /* Pods-YCCardView_Example */,
+				667E46A1C8458160BDC34557F4974690 /* Pods-YCCardView_Tests */,
+				DC19DD13B6C4888DE1A4EE995A00091B /* YCCardView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18F6583FBE163B2BFE8904AA9EB3F2FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90D790938CF49375A43A76CBF9275633 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8E90888457E263808B50852549E5E37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		004D23665FC930677925CE530F6368CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A450535942498D55F5EE3E72C4187F82 /* Pods-YCCardView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFF61EF342B3312BE911C2EEDA721847 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E7C321B66F36FA187B940AB762CDA28 /* YCCardCell.m in Sources */,
+				08CFAFC6DC913A1120DEB5EFD28091EC /* YCCardView.m in Sources */,
+				B347FF06E86A1DB9E0B2232869E41A35 /* YCCardView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF66A9775DEB8FB8B392AE57A539F858 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE1F1568773BACC7D4C34BC51AE9E8AB /* Pods-YCCardView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14B5B871E1CCB01DFBD4867F3D2E4A80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YCCardView;
+			target = DC19DD13B6C4888DE1A4EE995A00091B /* YCCardView */;
+			targetProxy = 0BDF231E1A24B5FBFD3B0D2DD5E5F132 /* PBXContainerItemProxy */;
+		};
+		1D700D58973C7DF899A476370C74F01A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-YCCardView_Example";
+			target = C5E2E9025FE8906B3933F0B4B3EFBE93 /* Pods-YCCardView_Example */;
+			targetProxy = 6A9A76F447E2F0BBEACCF31AE4F3C711 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		3492C7738E464B8EAB5886775083C194 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AAD7E574463FBA36AA309E0C70EEFF9 /* Pods-YCCardView_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-YCCardView_Tests/Pods-YCCardView_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YCCardView_Tests/Pods-YCCardView_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		533AA649CEAE0E31C62DD8FE4F4C532D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A986DA1B79884CD6BFEBD5570C8B14B /* Pods-YCCardView_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-YCCardView_Example/Pods-YCCardView_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YCCardView_Example/Pods-YCCardView_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7FB406325F150D6F4F6E734DFB2133F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F379B3456B842FB3D9266F7D0932679 /* YCCardView.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YCCardView/YCCardView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YCCardView/YCCardView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YCCardView/YCCardView.modulemap";
+				PRODUCT_MODULE_NAME = YCCardView;
+				PRODUCT_NAME = YCCardView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C25970D18D0019C09033E33B0B2DFFE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13EF4B967E17A1194EE95EC24C9ABAC0 /* YCCardView.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YCCardView/YCCardView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YCCardView/YCCardView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YCCardView/YCCardView.modulemap";
+				PRODUCT_MODULE_NAME = YCCardView;
+				PRODUCT_NAME = YCCardView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		DDCD71AFFDA09AE2821D7BC8B716B6D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED35E43465EBF23270B159EE5C542452 /* Pods-YCCardView_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-YCCardView_Tests/Pods-YCCardView_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YCCardView_Tests/Pods-YCCardView_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DF023E03B634C962E5C34C69DA091B79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76B3B1C81FB5EABBEBF2D8158A2851BB /* Pods-YCCardView_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-YCCardView_Example/Pods-YCCardView_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YCCardView_Example/Pods-YCCardView_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18B5C666FF278702F8996C7DF26A02A7 /* Build configuration list for PBXNativeTarget "Pods-YCCardView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				533AA649CEAE0E31C62DD8FE4F4C532D /* Debug */,
+				DF023E03B634C962E5C34C69DA091B79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BD3D11DB86ADE9DC2B1729BD5C35E8A /* Build configuration list for PBXNativeTarget "Pods-YCCardView_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDCD71AFFDA09AE2821D7BC8B716B6D4 /* Debug */,
+				3492C7738E464B8EAB5886775083C194 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86CF7B7AD1E23C6570178023111E2CEC /* Build configuration list for PBXNativeTarget "YCCardView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C25970D18D0019C09033E33B0B2DFFE8 /* Debug */,
+				7FB406325F150D6F4F6E734DFB2133F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

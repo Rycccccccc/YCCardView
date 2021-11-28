@@ -1,0 +1,16 @@
+PODS:
+  - YCCardView (0.0.1)
+
+DEPENDENCIES:
+  - YCCardView (from `../`)
+
+EXTERNAL SOURCES:
+  YCCardView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YCCardView: d753c18bb04543af514c25b23462adce448cf485
+
+PODFILE CHECKSUM: 0401bbdd1c35b7b221a634cf7c97807f460cd23a
+
+COCOAPODS: 1.11.2

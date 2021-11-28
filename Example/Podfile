@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'YCCardView_Example' do
+  pod 'YCCardView', :path => '../'
+
+  target 'YCCardView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

@@ -1,0 +1,6 @@
+framework module YCCardView {
+  umbrella header "YCCardView-umbrella.h"
+
+  export *
+  module * { export * }
+}

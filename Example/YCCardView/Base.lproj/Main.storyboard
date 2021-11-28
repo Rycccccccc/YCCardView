@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="wQg-tq-qST">
+            <objects>
+                <viewController id="whP-gf-Uak" customClass="YCViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="658"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view autoresizesSubviews="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDQ-ue-ps4" customClass="YCCardView">
+                                <rect key="frame" x="0.0" y="80" width="375" height="438"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHh-jO-oey">
+                                <rect key="frame" x="0.0" y="542" width="120" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="WlE-jm-2bk"/>
+                                    <constraint firstAttribute="height" constant="30" id="Zyj-Kg-RPU"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="重新加载数据"/>
+                                <connections>
+                                    <action selector="loadNewData:" destination="whP-gf-Uak" eventType="touchUpInside" id="EeG-M2-H3s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAg-qm-t72">
+                                <rect key="frame" x="135" y="542" width="105" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="347-xT-u2R"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="向左滑动"/>
+                                <connections>
+                                    <action selector="leftAction:" destination="whP-gf-Uak" eventType="touchUpInside" id="siC-al-pML"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Tr-YN-luT">
+                                <rect key="frame" x="245" y="542" width="101" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="101" id="EuL-FF-LlV"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="向右滑动"/>
+                                <connections>
+                                    <action selector="rightAction:" destination="whP-gf-Uak" eventType="touchUpInside" id="ote-DR-Dtb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5M-5w-omO">
+                                <rect key="frame" x="16" y="592" width="87" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="SYS-ia-tlR"/>
+                                    <constraint firstAttribute="height" constant="30" id="Y0S-P8-MHb"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="回退"/>
+                                <connections>
+                                    <action selector="rollBack:" destination="whP-gf-Uak" eventType="touchUpInside" id="QYu-pF-obn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="q5M-5w-omO" firstAttribute="top" secondItem="mHh-jO-oey" secondAttribute="bottom" constant="20" id="1qb-Qh-gS2"/>
+                            <constraint firstItem="mHh-jO-oey" firstAttribute="top" secondItem="FDQ-ue-ps4" secondAttribute="bottom" constant="24" id="3sV-gD-wpO"/>
+                            <constraint firstItem="0Tr-YN-luT" firstAttribute="bottom" secondItem="eAg-qm-t72" secondAttribute="bottom" id="GYS-fV-KVS"/>
+                            <constraint firstItem="Mvr-aV-6Um" firstAttribute="top" secondItem="FDQ-ue-ps4" secondAttribute="bottom" constant="140" id="I7M-5R-q6h"/>
+                            <constraint firstItem="q5M-5w-omO" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" id="INf-EN-zbD"/>
+                            <constraint firstItem="mHh-jO-oey" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" id="OYX-ph-FiK"/>
+                            <constraint firstItem="FDQ-ue-ps4" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="80" id="UWK-Mk-M9t"/>
+                            <constraint firstItem="eAg-qm-t72" firstAttribute="top" secondItem="mHh-jO-oey" secondAttribute="top" id="Wht-2k-dOe"/>
+                            <constraint firstItem="0Tr-YN-luT" firstAttribute="leading" secondItem="eAg-qm-t72" secondAttribute="trailing" constant="5" id="fKq-rQ-5ix"/>
+                            <constraint firstAttribute="trailing" secondItem="FDQ-ue-ps4" secondAttribute="trailing" id="i1I-LX-KI0"/>
+                            <constraint firstItem="0Tr-YN-luT" firstAttribute="top" secondItem="eAg-qm-t72" secondAttribute="top" id="jKo-OD-AD0"/>
+                            <constraint firstItem="FDQ-ue-ps4" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" id="jlr-Z8-L1K"/>
+                            <constraint firstItem="eAg-qm-t72" firstAttribute="bottom" secondItem="mHh-jO-oey" secondAttribute="bottom" id="reA-JF-jp5"/>
+                            <constraint firstItem="eAg-qm-t72" firstAttribute="leading" secondItem="mHh-jO-oey" secondAttribute="trailing" constant="15" id="yae-dB-sdO"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="658"/>
+                    <connections>
+                        <outlet property="cardView" destination="FDQ-ue-ps4" id="flB-8A-a3i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.80000000000001" y="436.2818590704648"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
