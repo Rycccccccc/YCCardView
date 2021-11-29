@@ -1,6 +1,4 @@
 # YCCardView
-
-[![CI Status](https://img.shields.io/travis/renyichun/YCCardView.svg?style=flat)](https://travis-ci.org/renyichun/YCCardView)
 [![Version](https://img.shields.io/cocoapods/v/YCCardView.svg?style=flat)](https://cocoapods.org/pods/YCCardView)
 [![License](https://img.shields.io/cocoapods/l/YCCardView.svg?style=flat)](https://cocoapods.org/pods/YCCardView)
 [![Platform](https://img.shields.io/cocoapods/p/YCCardView.svg?style=flat)](https://cocoapods.org/pods/YCCardView)
@@ -13,6 +11,9 @@
 ![image](./source/img_01.gif)
 
 该框架实现了类似于<font color=#0000FF >探探左滑右滑</font> 、<font color=#0000FF >陌陌的点点匹配</font>功能。 功能齐全，可以完成商业级的项目。
+
+<font color=#FF0000 >喜欢的朋友希望给个Star支持一下,谢谢!!!</font>
+
 
 ### 描述
 - 1、该框架采用<font color=#0000FF >UITableView</font> 的设计思想，内部使用四张卡片实现卡片的复用效果。通过更新卡片的代理回调来显示对于位置的数据。具体可参考demo示例。
