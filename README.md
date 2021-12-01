@@ -6,6 +6,9 @@
 -----
 ## 简介
 
+[功能罗列以及实现博客地址](https://juejin.cn/editor/drafts/7036766272616398856 "") 
+
+
 `效果图如下`
 
 ![image](./source/img_01.gif)
