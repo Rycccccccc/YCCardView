@@ -35,6 +35,74 @@
         喜欢、不喜欢拖拽结束，检测是否外界允许拖拽：不允许，则回复原位。这里针对一些业务场景比如：用户喜欢的次数用完了，再次触发喜欢操作，则需要弹框购买vip。
     - 无数据回调
     - 卡片点击事件
+    
+    
+### 代码示例
+
+1、代理方法
+```objc
+#pragma mark - 代理方法
+
+#pragma mark - YCCardViewDelegate
+
+/**
+ * 更新显示的卡片cell
+ * @param cardView 卡片容器视图
+ * @param cardDragCell 卡片容器视图对应的每个item
+ * @param intIndex 对应的每个item的索引
+ */
+- (void)yc_cardDragView:(YCCardView *)cardView updateDisplayCell:(YCCardCell *)cardCell cellForRowAtIndex:(NSInteger)indexRow {
+    if (indexRow >= self.mArrayData.count) {
+        return;
+    }
+    [cardCell yc_setObject:self.mArrayData[indexRow]];
+}
+
+
+/**
+ * 点击卡片cell事件
+ * @param cardView 卡片拖拽视图
+ * @param aUIntIndex 卡片所对应的位置
+ */
+- (void)yc_cardView:(YCCardView *)cardView didSelectedIndex:(NSUInteger)indexRow {
+    NSLog(@"Ryc_______ 点击cellIndex:%@",@(indexRow));
+}
+
+/**
+ 卡片是否可以移动，拖拽的时候，可以进行一些条件控制，比如喜欢次数用完了，需要用户充值vip等
+ * @param cardView 卡片拖拽视图
+ * @param isRightDirection 是否为右边
+ */
+- (BOOL)yc_cardDragView:(YCCardView *)cardView cheackCardHasCanDragWithDragingDirection:(BOOL )isRightDirection {
+    return YES;
+}
+
+
+#pragma mark - YCCardViewDataSource
+
+- (NSInteger)yc_numberOfRowsInCardDragView:(YCCardView *)cardView {
+    return self.mArrayData.count;
+}
+
+- (UIEdgeInsets)yc_edgeInsetsInCardDragView:(YCCardView *)cardView {
+    return UIEdgeInsetsMake(60,10, 60, 10);
+}
+
+- (YCCardCell *)yc_creatCellForCardView:(YCCardView *)cardView {
+    YCCardCell *cell = [[YCCardCell alloc] init];
+    cell.backgroundColor = [self p_randomColor];
+    return cell;
+}
+
+/**
+ 加载更多数据
+ */
+- (void)yc_loadDataMore {
+    [self loadMoreData];
+}
+
+```
+
 
 ### 注意点
 demo示例只是罗列了该框架的功能使用，上层业务控制，结合具体情况设置。比如：卡片拖拽的时候，操作按钮视图关闭交互,拖拽结束再打开等
