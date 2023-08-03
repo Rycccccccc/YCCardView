@@ -140,7 +140,7 @@
 }
 
 /**
- 卡片移动后还原方法代理
+ 卡片移动后还原
  */
 - (void)yc_cardDragEndRestore {
     
