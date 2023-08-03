@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - 视图协议
 @protocol YCCardViewDelegate <NSObject>
 
+@optional
 /**
  * 点击卡片cell事件
  * @param cardView 卡片拖拽视图

@@ -191,6 +191,7 @@ typedef enum : NSUInteger {
                          animations:^{
             cell.center = self.centerPoint;
             cell.transform = CGAffineTransformMakeRotation(0);
+            [cell yc_cardDragEndRestore];
             [self p_sendDelegateCardDragEndRestore];
         }];
     }
