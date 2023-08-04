@@ -54,10 +54,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)yc_cardDragingDistance:(CGFloat )centerDistance dragingDirection:(BOOL )isRightDirection;
 
 /**
- 卡片拖拽结束
+ 卡片移动后还原
  */
-- (void)yc_cardDragEnd;
-
+- (void)yc_cardDragEndRestore;
 
 @end
 

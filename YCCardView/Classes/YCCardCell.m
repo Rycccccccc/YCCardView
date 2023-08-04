@@ -140,9 +140,9 @@
 }
 
 /**
- 卡片拖拽结束
+ 卡片移动后还原
  */
-- (void)yc_cardDragEnd {
+- (void)yc_cardDragEndRestore {
     
 }
 
