@@ -293,6 +293,12 @@ typedef enum : NSUInteger {
     
 }
 
+// 获取当前索引
+- (NSInteger )yc_getCurIndex {
+    YCCardCell *topCell = [self p_getTopCardCellView];
+    return topCell.indexRow;
+}
+
 #pragma mark - 私有方法 ================================================
 
 

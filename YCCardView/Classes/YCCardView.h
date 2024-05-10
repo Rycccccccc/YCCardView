@@ -117,6 +117,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)yc_cardViewRollbackCellPreHandle:(BOOL (^)(void)) preHandle
                              complete:(void (^)(YCCardCell *carlCell ,NSInteger cellIndex))complete;
 
+// 获取当前索引
+- (NSInteger )yc_getCurIndex;
+
 @end
 
 NS_ASSUME_NONNULL_END

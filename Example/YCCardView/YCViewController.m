@@ -103,7 +103,13 @@
  * @param isRightDirection 是否为右边
  */
 - (BOOL)yc_cardDragView:(YCCardView *)cardView cheackCardHasCanDragWithDragingDirection:(BOOL )isRightDirection {
-    return YES;
+    // 测试代码
+    NSInteger curIndex = [cardView yc_getCurIndex];
+    if (curIndex == self.mArrayData.count -1) {
+        return  false;
+    }
+    NSLog(@"Ryc_______ curIndex:%@",@(curIndex));
+    return true;
 }
 
 
@@ -127,7 +133,7 @@
  加载更多数据
  */
 - (void)yc_loadDataMore {
-    [self loadMoreData];
+//    [self loadMoreData];
 }
 
 #pragma mark - 对外方法
