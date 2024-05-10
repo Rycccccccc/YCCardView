@@ -132,7 +132,7 @@ typedef enum : NSUInteger {
                 isCanDrag = [self.delegate yc_cardDragView:self cheackCardHasCanDragWithDragingDirection:isRight];
             }
             if (isCanDrag == NO) { // // 不允许移动，则复位
-                xFromCenter = 0.1;
+                xFromCenter = 0;
             }
             [self panGestureStateEndWithWithDistance:xFromCenter
                                          andVelocity:[panGesture velocityInView:panGesture.view.superview]];

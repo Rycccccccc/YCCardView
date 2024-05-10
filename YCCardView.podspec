@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YCCardView'
-  s.version          = '0.0.3'
+  s.version          = '0.0.4'
   s.summary          = 'YCCardView 左滑右滑卡片框架'
   s.description      = 'YCCardView 左滑右滑卡片框架,支持自定义卡片视图等众多功能！'
   s.homepage         = 'https://github.com/Rycccccccc/YCCardView'
